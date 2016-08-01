@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 
 app.get('/', function (req, res) {
     chuckNorris.getRandom().then(function (joke) {
-        res.write(joke.value.joke);
+        res.send(joke.value.joke);
     });
 });
 
