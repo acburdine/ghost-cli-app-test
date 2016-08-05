@@ -23,12 +23,9 @@
   },
   "homepage": "https://github.com/acburdine/ghost-cli-app-test#readme",
   "dependencies": {
-    "bluebird": "^3.4.1",
     "chuck-norris-api": "^1.0.8",
     "express": "^4.14.0",
-    "knex": "^0.11.9",
     "morgan": "^1.7.0",
-    "nconf": "^0.8.4",
-    "sqlite3": "^3.1.4"
+    "nconf": "^0.8.4"
   }
 }
