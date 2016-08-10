@@ -4,6 +4,7 @@ var ignition = require('ghost-ignition'),
     morgan = require('morgan'),
     chuckNorris = require('chuck-norris-api'),
     chalk = require('chalk'),
+    pkg = require('./package'),
     app;
 
 var app = express();
@@ -14,6 +15,10 @@ app.get('/', function (req, res) {
     chuckNorris.getRandom().then(function (joke) {
         res.send(joke.value.joke);
     });
+});
+
+app.get('/about/', function (req, res) {
+    res.send(pkg.version);
 });
 
 ignition.server.start(app);
