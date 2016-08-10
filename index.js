@@ -1,11 +1,9 @@
 /* jshint node:true */
-var nconf = require('nconf'),
+var ignition = require('ghost-ignition'),
     express = require('express'),
     morgan = require('morgan'),
     chuckNorris = require('chuck-norris-api'),
     app;
-
-nconf.file({file: __dirname + '/config.json'});
 
 var app = express();
 
@@ -17,4 +15,4 @@ app.get('/', function (req, res) {
     });
 });
 
-app.listen(nconf.get('port') || 2368, nconf.get('host') || '127.0.0.1');
+ignition.server.start(app);

@@ -25,7 +25,7 @@
   "dependencies": {
     "chuck-norris-api": "^1.0.8",
     "express": "^4.14.0",
-    "morgan": "^1.7.0",
-    "nconf": "^0.8.4"
+    "ghost-ignition": "0.0.3",
+    "morgan": "^1.7.0"
   }
 }
