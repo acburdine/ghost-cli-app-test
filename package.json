@@ -1,6 +1,6 @@
 {
   "name": "ghost-cli-app-test",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "simple express application to test ghost-cli's setup",
   "main": "index.js",
   "scripts": {
