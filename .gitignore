@@ -38,3 +38,6 @@ jspm_packages
 
 # Generated db files
 *.db
+
+# Generated zip files
+*.zip
