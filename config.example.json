@@ -1,4 +1,4 @@
 {
     "port": 2368,
-    "db": "test.db"
+    "db": "content/test.db"
 }
